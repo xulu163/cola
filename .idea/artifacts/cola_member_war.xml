@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cola_member:war">
+    <output-path>$PROJECT_DIR$/cola_member/target</output-path>
+    <root id="archive" name="cola_member-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="cola_member:war exploded" />
+    </root>
+  </artifact>
+</component>
