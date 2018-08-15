@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cola_apollo" />
+        <module name="cola_common" />
+        <module name="cola_eureka" />
+        <module name="cola_gold" />
+        <module name="cola_member" />
+        <module name="cola_thor" />
+        <module name="cola_turbine" />
+        <module name="cola_zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cola_apollo" target="1.5" />
+      <module name="cola_common" target="1.5" />
+      <module name="cola_eureka" target="1.5" />
+      <module name="cola_gold" target="1.5" />
+      <module name="cola_member" target="1.5" />
+      <module name="cola_thor" target="1.5" />
+      <module name="cola_turbine" target="1.5" />
+      <module name="cola_zuul" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
