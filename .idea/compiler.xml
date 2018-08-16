@@ -19,12 +19,12 @@
     <bytecodeTargetLevel>
       <module name="cola_apollo" target="1.5" />
       <module name="cola_common" target="1.5" />
-      <module name="cola_eureka" target="1.5" />
+      <module name="cola_eureka" target="1.8" />
       <module name="cola_gold" target="1.5" />
       <module name="cola_member" target="1.5" />
       <module name="cola_thor" target="1.5" />
-      <module name="cola_turbine" target="1.5" />
-      <module name="cola_zuul" target="1.5" />
+      <module name="cola_turbine" target="1.8" />
+      <module name="cola_zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
