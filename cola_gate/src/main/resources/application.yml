@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: gate
+server:
+    port: 5555
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:1687/eureka/
+zuul:
+    routes:
+        api-a.path: /api/gold/**
+        api-a.serviceId: gold
+        api-b.path: /api/thor/**
+        api-b.serviceId: thor
+

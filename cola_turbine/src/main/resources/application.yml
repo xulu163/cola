@@ -3,8 +3,8 @@ spring:
         name: turbine
 server:
     port: 2260
-management:
-    port: 8990
+#management:
+#    port: 8990
 
 eureka:
     client:
