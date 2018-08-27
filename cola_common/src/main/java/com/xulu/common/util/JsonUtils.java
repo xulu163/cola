@@ -44,9 +44,7 @@ public class JsonUtils {
      */
     public static List<Map<String, Object>> getBeanMapList(String jsonData)
             throws Exception {
-        return JSON.parseObject(jsonData,
-                new TypeReference<List<Map<String, Object>>>() {
-                });
+        return JSON.parseObject(jsonData, new TypeReference<List<Map<String, Object>>>() {});
     }
 
     public static Map<String,Object> json2Map(String json){
@@ -58,7 +56,6 @@ public class JsonUtils {
     }
 
     public static JSONArray stringToJsonArray(String str){
-
-        return  JSONArray.parseArray(str);
+        return JSONArray.parseArray(str);
     }
 }
