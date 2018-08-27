@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/cola_gate/cola_gate.iml" filepath="$PROJECT_DIR$/cola_gate/cola_gate.iml" />
       <module fileurl="file://$PROJECT_DIR$/cola_gold/cola_gold.iml" filepath="$PROJECT_DIR$/cola_gold/cola_gold.iml" />
       <module fileurl="file://D:\spaces\cola\cola_member\cola_member.iml" filepath="D:\spaces\cola\cola_member\cola_member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cola_quartz/cola_quartz.iml" filepath="$PROJECT_DIR$/cola_quartz/cola_quartz.iml" />
       <module fileurl="file://$PROJECT_DIR$/cola_thor/cola_thor.iml" filepath="$PROJECT_DIR$/cola_thor/cola_thor.iml" />
       <module fileurl="file://$PROJECT_DIR$/cola_turbine/cola_turbine.iml" filepath="$PROJECT_DIR$/cola_turbine/cola_turbine.iml" />
     </modules>

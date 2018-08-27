@@ -12,6 +12,7 @@
         <module name="cola_gate" />
         <module name="cola_gold" />
         <module name="cola_member" />
+        <module name="cola_quartz" />
         <module name="cola_thor" />
         <module name="cola_turbine" />
         <module name="cola_zuul" />
@@ -24,6 +25,7 @@
       <module name="cola_gate" target="1.8" />
       <module name="cola_gold" target="1.5" />
       <module name="cola_member" target="1.5" />
+      <module name="cola_quartz" target="1.5" />
       <module name="cola_thor" target="1.5" />
       <module name="cola_turbine" target="1.8" />
       <module name="cola_zuul" target="1.8" />
