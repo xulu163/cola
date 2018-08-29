@@ -1,17 +1,26 @@
 package com.xulu.common.result;
 
+import java.io.Serializable;
+
 /**
  * @author xulu
  * @date 2018/8/27
  * @link https://github.com/xulu163
  */
-public class BaseResult<T> {
+public class BaseResult<T> implements Serializable{
 
     private T data;
 
     private int code;
 
     private String msg;
+
+    public BaseResult(T data, int code, String msg){
+        super();
+        this.data = data;
+        this.code = code;
+        this.msg = msg;
+    }
 
     public T getData() {
         return data;

@@ -11,7 +11,7 @@ import java.util.Map;
  * @date 2018/8/27
  * @link https://github.com/xulu163
  */
-public class JsonUtils {
+public class JsonUtil {
 
     /**
      * 功能描述：把JSON数据转换成普通字符串列表

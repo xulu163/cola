@@ -5,8 +5,6 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
-
-import javax.servlet.http.HttpServletResponse;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import java.util.Set;
@@ -19,9 +17,8 @@ import java.util.Set;
 @ControllerAdvice
 class GlobalExceptionHandler {
 
-    // 异常处理方法：
     // 根据特定的异常返回指定的 HTTP 状态码
-    @ResponseStatus(value = HttpStatus.BAD_REQUEST)  // 400
+    @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     @ExceptionHandler(ConstraintViolationException.class)
     @ResponseBody
     public ResponseError handleValidationException(ConstraintViolationException ex) {
@@ -30,25 +27,21 @@ class GlobalExceptionHandler {
         for (ConstraintViolation<?> violation : errors) {
             strBuilder.append(violation.getMessage() + "\n");
         }
-        return ResponseError.build(ResponseError.Type.VALIDATION_ERROR, strBuilder.toString());
+        return ResponseError.build(ResponseError.Type.BAD_REQUEST_ERROR, strBuilder.toString());
     }
 
     // 通用异常的处理，返回500
-    @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)  // 500
+    @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public ResponseError handleException(Exception ex) {
         return ResponseError.build(ResponseError.Type.INTERNAL_SERVER_ERROR, ex.getMessage());
     }
 
-    @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)  // 500
+    @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(BaseException.class)
     @ResponseBody
-    public ResponseError handleBaseException(HttpServletResponse response, BaseException ex) {
+    public ResponseError handleBaseException(BaseException ex) {
         return ex.getResponseError();
     }
-
-
-
-
 }
