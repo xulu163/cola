@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/cola_thor/pom.xml" />
         <option value="$PROJECT_DIR$/cola_turbine/pom.xml" />
         <option value="$PROJECT_DIR$/cola_quartz/pom.xml" />
+        <option value="$PROJECT_DIR$/cola_admin/pom.xml" />
       </list>
     </option>
   </component>

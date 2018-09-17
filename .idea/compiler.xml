@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cola_admin" />
         <module name="cola_apollo" />
         <module name="cola_common" />
         <module name="cola_eureka" />
@@ -19,6 +20,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cola_admin" target="1.5" />
       <module name="cola_apollo" target="1.5" />
       <module name="cola_common" target="1.5" />
       <module name="cola_eureka" target="1.8" />

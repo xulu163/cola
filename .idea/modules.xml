@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cola.iml" filepath="$PROJECT_DIR$/cola.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cola_admin/cola_admin.iml" filepath="$PROJECT_DIR$/cola_admin/cola_admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/cola_apollo/cola_apollo.iml" filepath="$PROJECT_DIR$/cola_apollo/cola_apollo.iml" />
       <module fileurl="file://$PROJECT_DIR$/cola_common/cola_common.iml" filepath="$PROJECT_DIR$/cola_common/cola_common.iml" />
       <module fileurl="file://$PROJECT_DIR$/cola_eureka/cola_eureka.iml" filepath="$PROJECT_DIR$/cola_eureka/cola_eureka.iml" />
